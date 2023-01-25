@@ -23,7 +23,7 @@ public class SoftBodyScript : MonoBehaviour {
 	
 	#region privateMethods
 	private void UpdateVertices() {
-		for (var i = 0; i < points.Length; i++) {
+		for (var i = 0; i < points.Length-1; i++) {
 			Vector2 vertex = points[i].localPosition;
 			var towardsCenter = (Vector2.zero - vertex).normalized;
 			var colliderRadius = points[i].gameObject.GetComponent<CircleCollider2D>().radius;
