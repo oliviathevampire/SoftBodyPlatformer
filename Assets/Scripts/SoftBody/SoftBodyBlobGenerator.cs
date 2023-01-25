@@ -17,9 +17,15 @@ namespace SoftBody {
         [SerializeField] private float springDistanceMultiplier = 1;
         [SerializeField] private float dampeningRatio;
         [SerializeField] private float frequency;
-
+        
+        private bool _lastLetJointsAutoConfigureDistance = false;
+        private float _lastSpringDistanceMultiplier = 1;
+        private float _lastDampeningRatio;
+        private float _lastFrequency;
+        
         private List<SpringJoint2D> _springJoint2Ds = new List<SpringJoint2D>();
         private Dictionary<SpringJoint2D, float> _startingDistances = new Dictionary<SpringJoint2D, float>();
+        private Dictionary<GameObject, Vector3> _startingLocalPosition = new Dictionary<GameObject, Vector3>();
 
         private void Start() {
             GenerateSoftBody();
@@ -28,13 +34,23 @@ namespace SoftBody {
 
         private void FixedUpdate() {
             if (!tuningMode) return;
-            _springJoint2Ds = _springJoint2Ds.Where(x => x != null).ToList();
+            if (_lastLetJointsAutoConfigureDistance == letJointsAutoConfigureDistance &&
+                Math.Abs(_lastSpringDistanceMultiplier - springDistanceMultiplier) < 0.001f && 
+                Math.Abs(_lastDampeningRatio - dampeningRatio) < 0.001f && 
+                Math.Abs(_lastFrequency - frequency) < 0.001f)
+                return;
+
+            _lastLetJointsAutoConfigureDistance = letJointsAutoConfigureDistance;
+            _lastSpringDistanceMultiplier = springDistanceMultiplier;
+            _lastDampeningRatio = dampeningRatio;
+            _lastFrequency = frequency;
+            
             foreach (SpringJoint2D springJoint2D in _springJoint2Ds) {
                 TuneSpringJoint(springJoint2D);
             }
         }
 
-        public void GenerateSoftBody() {
+        private void GenerateSoftBody() {
             if (float.IsNegative(spacing.x)) throw new ArgumentException($"{nameof(spacing)}.x cannot be negative");
             if (float.IsNegative(spacing.y)) throw new ArgumentException($"{nameof(spacing)}.y cannot be negative");
             if (spacing.x == 0) throw new ArgumentException($"{nameof(spacing)}.x cannot be zero");
@@ -57,6 +73,8 @@ namespace SoftBody {
 
                     GameObject activeNode = Instantiate(blobNodePrefab, thisTransform.position, Quaternion.identity, thisTransform);
                     
+                    _startingLocalPosition.Add(activeNode, activeNode.transform.localPosition);
+
                     // Add spacing
                     activeNode.transform.localPosition = new float3(x * spacing.x, y * spacing.y, 0) - spawningOffset;
                     nodes.Add(activeNode);
@@ -94,7 +112,7 @@ namespace SoftBody {
             }
         }
 
-        private void TuneSpringJoint(SpringJoint2D springJoint2D) {
+        private void TuneSpringJoint(SpringJoint2D springJoint2D, bool resetPosition = false) {
             springJoint2D.autoConfigureDistance = letJointsAutoConfigureDistance;
             if (!letJointsAutoConfigureDistance) {
                 springJoint2D.distance = _startingDistances[springJoint2D] * springDistanceMultiplier;
@@ -103,6 +121,10 @@ namespace SoftBody {
             springJoint2D.dampingRatio = dampeningRatio;
             springJoint2D.frequency = frequency;
             springJoint2D.attachedRigidbody.WakeUp();
+
+            if (resetPosition) {
+                springJoint2D.transform.localPosition = _startingLocalPosition[springJoint2D.gameObject];
+            }
         }
     }
 }
