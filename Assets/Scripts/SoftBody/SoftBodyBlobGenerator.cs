@@ -80,7 +80,7 @@ namespace SoftBody {
                     nodes.Add(activeNode);
                     
                     // Add rb
-                    nodesRigidBodyDictionary.Add(activeNode, activeNode.AddComponent<Rigidbody2D>());
+                    nodesRigidBodyDictionary.Add(activeNode, activeNode.GetComponent<Rigidbody2D>());
                 }
                 if (nodes.Count >= numberOfNodesToSpawn)
                     break;
