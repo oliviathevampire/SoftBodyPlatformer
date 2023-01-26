@@ -4194,6 +4194,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 677197402, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: jumpForce
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 677197402, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: groundCheckDistance
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1755224126068114256, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
       propertyPath: m_Name
       value: SoftBodyThingy
