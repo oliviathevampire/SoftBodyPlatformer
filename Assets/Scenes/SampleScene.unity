@@ -1420,20 +1420,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b129a85e562dd764eaa840efcb42cf15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blobNodePrefab: {fileID: 806754808714465113, guid: a4b2dfabe6bd35b4f8c0a4f7a8909ae4, type: 3}
-  spacing:
-    x: 1
-    y: 1
-  blobArea:
-    x: 3
-    y: 3
-  maxNodes: 10
-  masterNodeRigidbody2D: {fileID: 529176083}
-  tuningMode: 1
-  letJointsAutoConfigureDistance: 0
-  springDistanceMultiplier: 1
-  dampeningRatio: 1
-  frequency: 5
 --- !u!4 &529176085
 Transform:
   m_ObjectHideFlags: 0
@@ -1660,58 +1646,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parallaxEffect: 0.8
   cam: {fileID: 519420031}
---- !u!1 &677197395 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1755224126068114256, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
-  m_PrefabInstance: {fileID: 1755224126733251843}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &677197398 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1755224126068114261, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
   m_PrefabInstance: {fileID: 1755224126733251843}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &677197400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 677197395}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e033fe085fda86479ec3a7e92255bff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  fallGravity: 2
-  defaultGravity: 1
-  walkSpeed: 4
-  runSpeed: 6
-  jumpForce: 8
-  coyoteTime: 0.02
-  airJumpAmount: 10
---- !u!114 &677197402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 677197395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ea72021fe8f43d4882fe4b8f18b83a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkSpeed: 600
-  sprintSpeed: 1200
-  jumpForce: 8
-  gravity: 2
-  groundCheckDistance: 4
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!1 &695797299
 GameObject:
   m_ObjectHideFlags: 0
@@ -4303,34 +4242,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1958809721499751750, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
-      propertyPath: m_DynamicOccludee
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5391698365574309984, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
-      propertyPath: m_Spline.m_ControlPoints.Array.data[0].height
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5391698365574309984, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
-      propertyPath: m_Spline.m_ControlPoints.Array.data[3].height
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5391698365574309984, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
-      propertyPath: m_Spline.m_ControlPoints.Array.data[4].height
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5391698365574309984, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
-      propertyPath: m_Spline.m_ControlPoints.Array.data[5].height
-      value: 0.1
+      propertyPath: m_Creator
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1755224126068114256, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 677197400}
-    - targetCorrespondingSourceObject: {fileID: 1755224126068114256, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 677197402}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}

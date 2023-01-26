@@ -1,19 +1,15 @@
-using System;
-using System.Collections.Generic;
 using Unity.Mathematics;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
 
 namespace SoftBody {
     public class BlobMovement : MonoBehaviour {
-        [SerializeField] private float walkSpeed;
-        [SerializeField] private float sprintSpeed;
-        [SerializeField] private float jumpForce;
-        [SerializeField] private float gravity;
+        [SerializeField] private float walkSpeed = 600;
+        [SerializeField] private float sprintSpeed = 900;
+        [SerializeField] private float jumpForce = 12;
+        [SerializeField] private float gravity = 2;
         [Header("GroundCheck")] 
-        [SerializeField] private float groundCheckDistance;
+        [SerializeField] private float groundCheckDistance = 1;
         [SerializeField] private LayerMask groundLayer;
 
         private PlayerInputs _playerInputs;

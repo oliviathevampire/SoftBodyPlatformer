@@ -1,6 +1,8 @@
+using System;
 using UnityEngine;
 using UnityEngine.U2D;
 
+[Obsolete]
 public class SoftBodyScript : MonoBehaviour {
 	#region Constants
 	private const float SplineOffset = 0.5f;
@@ -23,6 +25,7 @@ public class SoftBodyScript : MonoBehaviour {
 	
 	#region privateMethods
 	private void UpdateVertices() {
+		
 		for (var i = 0; i < points.Length-1; i++) {
 			Vector2 vertex = points[i].localPosition;
 			var towardsCenter = (Vector2.zero - vertex).normalized;
