@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 
+[Obsolete]
 public class Movement : MonoBehaviour {
     private Rigidbody2D _rb;
     private Collider2D _bc;
