@@ -1492,7 +1492,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.14999, y: 0.08021, z: -10}
+  m_LocalPosition: {x: 15.149994, y: 0.08021, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2445,7 +2445,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &861419379
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5497,6 +5497,14 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1755224126474274384, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.3887029
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224126474274388, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.85348517
+      objectReference: {fileID: 0}
     - target: {fileID: 1755224126474274391, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
       propertyPath: m_Constraints
       value: 4
@@ -5504,6 +5512,18 @@ PrefabInstance:
     - target: {fileID: 1755224126474274391, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
       propertyPath: m_CollisionDetection
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224126474274392, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.38090006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224126474274394, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.72605926
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224126474274395, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.8555324
       objectReference: {fileID: 0}
     - target: {fileID: 1755224126531598145, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
       propertyPath: m_Constraints
@@ -5513,6 +5533,22 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1755224126531598148, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.7278904
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224126531598149, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.9535167
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224126531598150, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.7788768
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224126531598154, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.3887029
+      objectReference: {fileID: 0}
     - target: {fileID: 1755224126653355064, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
       propertyPath: m_Constraints
       value: 4
@@ -5520,6 +5556,34 @@ PrefabInstance:
     - target: {fileID: 1755224126653355064, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
       propertyPath: m_CollisionDetection
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224126653355065, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.38274387
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224126653355068, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.7781066
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224126653355069, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.815552
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224126653355075, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.9535167
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224126691617856, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.86304134
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224126691617857, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.72605926
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224126691617858, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.83962435
       objectReference: {fileID: 0}
     - target: {fileID: 1755224126691617862, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
       propertyPath: m_Constraints
@@ -5529,6 +5593,14 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1755224126691617863, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.36440778
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224126691617866, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.48077962
+      objectReference: {fileID: 0}
     - target: {fileID: 1755224127157637492, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
       propertyPath: m_Constraints
       value: 4
@@ -5536,6 +5608,22 @@ PrefabInstance:
     - target: {fileID: 1755224127157637492, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
       propertyPath: m_CollisionDetection
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224127157637493, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.48077962
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224127157637494, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.84259695
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224127157637495, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.8218052
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224127157637496, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.4221293
       objectReference: {fileID: 0}
     - target: {fileID: 1755224127338804277, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
       propertyPath: m_Constraints
@@ -5545,6 +5633,34 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1755224127338804278, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.41005972
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224127338804280, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.8518149
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224127338804281, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.80384386
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224127338804286, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.38274387
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224127451813748, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.8975871
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224127451813749, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.80384386
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224127451813750, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.8904137
+      objectReference: {fileID: 0}
     - target: {fileID: 1755224127451813751, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
       propertyPath: m_Constraints
       value: 4
@@ -5552,6 +5668,14 @@ PrefabInstance:
     - target: {fileID: 1755224127451813751, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
       propertyPath: m_CollisionDetection
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224127451813755, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.48690125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224127451813759, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.4202333
       objectReference: {fileID: 0}
     - target: {fileID: 1755224127553260172, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
       propertyPath: m_Constraints
@@ -5561,6 +5685,26 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1755224127553260176, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.44028234
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224127553260177, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.84259695
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224127553260178, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.8531781
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224127553260179, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.84469646
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224127553260180, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.48690125
+      objectReference: {fileID: 0}
     - target: {fileID: 1755224127615750033, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
       propertyPath: m_Constraints
       value: 4
@@ -5568,6 +5712,26 @@ PrefabInstance:
     - target: {fileID: 1755224127615750033, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
       propertyPath: m_CollisionDetection
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224127615750034, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.38090006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224127615750036, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.8218052
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224127615750037, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.7278904
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224127615750038, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.8487834
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224127615750042, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.36440778
       objectReference: {fileID: 0}
     - target: {fileID: 1755224127753422190, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
       propertyPath: m_Constraints
@@ -5577,6 +5741,18 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1755224127753422193, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.8555324
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224127753422194, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.8518149
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224127753422195, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.7782833
+      objectReference: {fileID: 0}
     - target: {fileID: 1755224128001065474, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
       propertyPath: m_Constraints
       value: 4
@@ -5585,6 +5761,30 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1755224128001065475, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.4202333
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224128001065477, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.8531781
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224128001065478, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.7781066
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224128001065479, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.85603994
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224128001065483, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.41005972
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224128045069544, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.8230168
+      objectReference: {fileID: 0}
     - target: {fileID: 1755224128045069548, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
       propertyPath: m_Constraints
       value: 4
@@ -5592,6 +5792,22 @@ PrefabInstance:
     - target: {fileID: 1755224128045069548, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
       propertyPath: m_CollisionDetection
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224128045069549, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.4221293
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224128045069550, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.86304134
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224128045069551, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.8975871
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755224128045069552, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: m_Distance
+      value: 0.44028234
       objectReference: {fileID: 0}
     - target: {fileID: 1958809721499751750, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
       propertyPath: m_ShapeTexture
@@ -5661,6 +5877,10 @@ PrefabInstance:
       propertyPath: m_SpriteShape
       value: 
       objectReference: {fileID: 11400000, guid: bccbb73b234048348b8910719aff1eea, type: 2}
+    - target: {fileID: 6746711962358704789, guid: 08feab92b27d3b247bee5db6ecc459d5, type: 3}
+      propertyPath: levelFloor
+      value: -100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

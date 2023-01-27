@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Framework {
     public abstract class Subject<T> : MonoBehaviour {
-        private Dictionary<int, IObserver<T>> _observers;
+        private Dictionary<int, IObserver<T>> _observers = new Dictionary<int, IObserver<T>>();
 
         public void AddObserver(IObserver<T> observer) {
             if (!_observers.TryAdd(observer.GetHashCode(), observer)) {
@@ -20,9 +20,14 @@ namespace Framework {
                 Debug.LogWarning("Tried to remove a observer that was not there.");
             }
         }
-
+        
         protected void NotifyObservers(T arg) {
+            if (arg == null)
+                Debug.LogError("Arg was null");
+            
             foreach (IObserver<T> observer in _observers.Values) {
+                if (observer is null) continue;
+
                 observer.OnNotify(arg);
             }
         }
